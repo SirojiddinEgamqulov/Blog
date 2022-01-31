@@ -1,8 +1,8 @@
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
@@ -14,10 +14,8 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-uploads
 .idea
 *.iws
-*.log
 *.iml
 *.ipr
 
@@ -28,11 +26,8 @@ uploads
 /nbdist/
 /.nb-gradle/
 build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
-'.idea' 
-'*.mvn' 
-server/.mvn
-server/mvnw
-server/mvnw.cmd
